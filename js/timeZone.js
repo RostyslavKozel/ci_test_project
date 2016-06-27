@@ -7,11 +7,13 @@ $(document).ready(function(){
 	var timeZoneMessage = $('#myModal');
 	var updateTimezoneBtn = $('#updateBtn');
 	var dontUpdateLink = $('#dontUpdateLink');
-
+	var closeBtn = $('#closeBtn');
 
 
 	updateTimezoneBtn.click(updateSettings);
 	dontUpdateLink.click(invertRemindChanges);
+	closeBtn.click(hideTZMessage);
+	
 	newTimeZone.text(currentTimeZone);
 	
 	if((newTimeZone.text() !== previosTimeZone.text()) && +userRemindChanges){
