@@ -8,7 +8,7 @@
         <h5 class="modal-title"><a href="">Time zone settings</a></h5>
       </div>
       <div class="modal-body">
-        <p>Change timezone to</p>
+        <p>Change timezone to <span id="nameTZ"></span></p>
         <button type="button" id="updateBtn" class="btn btn-danger center-block" data-dismiss="modal">Yes, update my settings</button>
       </div>
       <div class="modal-footer">

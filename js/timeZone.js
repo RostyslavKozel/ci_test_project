@@ -8,13 +8,15 @@ $(document).ready(function(){
 	var updateTimezoneBtn = $('#updateBtn');
 	var dontUpdateLink = $('#dontUpdateLink');
 	var closeBtn = $('#closeBtn');
+	var nemeTZ = $('#nameTZ');
 
 
 	updateTimezoneBtn.click(updateSettings);
 	dontUpdateLink.click(invertRemindChanges);
 	closeBtn.click(hideTZMessage);
-	
+
 	newTimeZone.text(currentTimeZone);
+	nemeTZ.text(currentTime.toString().split('(')[1].slice(0, -1));
 	
 	if((newTimeZone.text() !== previosTimeZone.text()) && +userRemindChanges){
 		timeZoneMessage.removeClass('hidden');
